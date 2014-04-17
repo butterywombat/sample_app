@@ -2,11 +2,18 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
+gem 'bootstrap-sass'
 gem 'pg'
 
 group :development, :test do
-# Use sqlite3 as the database for Active Record
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
+  gem 'fuubar' # progress bar for testing
+  gem 'rspec-nc'
+  gem 'terminal-notifier-guard'
 end
 
 group :test do
