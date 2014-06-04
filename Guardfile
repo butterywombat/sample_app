@@ -14,7 +14,7 @@ notification :tmux,
 
 require 'active_support/inflector'
 
-guard :rspec, after_all_pass: false, cmd: '--drb' do
+guard :rspec, after_all_pass: false, cmd: 'rspec' do
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
   watch('spec/spec_helper.rb')  { "spec" }
